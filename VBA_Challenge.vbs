@@ -70,6 +70,7 @@ Sub AllStocksAnalysisRefactored()
     End If
     
     '3c) check if the current row is the last row with the selected ticker
+    'If the next row’s ticker doesn’t match, increase the tickerIndex.
     'If  Then
      If Cells(j, 1).Value = tickers(tickerIndex) And Cells(j + 1, 1).Value <> tickers(tickerIndex) Then
         tickerEndingPrices(tickerIndex) = Cells(j, 6).Value
